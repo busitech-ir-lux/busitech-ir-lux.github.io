@@ -1,0 +1,111 @@
+---
+import resume from "../content/resume.json";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{resume.name} — Resume</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/icons.css" />
+    <script type="module" src="/ui.js"></script>
+  </head>
+  <body>
+    <main class="container">
+<header class="hero">
+  <div class="hero-left">
+    {resume.image && (
+      <img
+        src={resume.image}
+        alt={resume.name}
+        class="avatar"
+        loading="lazy"
+      />
+    )}
+
+    <div>
+      <h1>{resume.name}</h1>
+      <p class="muted">{resume.title} • {resume.location}</p>
+      <p class="muted">{resume.email}</p>
+    </div>
+{resume.social?.length ? (
+  <div class="social" aria-label="Social links">
+    {resume.social.map((s) => (
+      <a
+        class="social-link"
+        data-icon={s.icon}
+        href={s.url}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={s.label || s.icon}
+        title={s.label || s.icon}
+      >
+        <span class="icon" data-icon={s.icon} aria-hidden="true"></span>
+      </a>
+    ))}
+  </div>
+) : null}
+  </div>
+
+  <button class="btn" id="themeToggle">Toggle theme</button>
+</header>
+      <section class="card">
+        <h2>Summary</h2>
+        <p>{resume.summary}</p>
+      </section>
+
+      <section class="card">
+        <h2>Skills</h2>
+        <div class="filters">
+          <input class="input" id="skillSearch" placeholder="Search skills..." />
+        </div>
+
+        <ul class="skills" id="skillsList">
+          {resume.skills.map((s) => (
+            <li class="skill" data-name={s.name.toLowerCase()}>
+              <div class="skill-top">
+                <span>{s.name}</span>
+                <span class="muted">{s.level}%</span>
+              </div>
+              <div class="bar"><div class="bar-fill" style={`width:${s.level}%`}></div></div>
+              <div class="tags">
+                {s.tags.map((t) => <span class="tag">{t}</span>)}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Projects</h2>
+        <div class="grid">
+          {resume.projects.map((p) => (
+            <a class="project" href={p.link} target="_blank">
+              <strong>{p.title}</strong>
+              <p class="muted">{p.description}</p>
+              <div class="tags">
+                {p.tags.map((t) => <span class="tag">{t}</span>)}
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Experience</h2>
+        {resume.experience.map((e) => (
+          <article class="item">
+            <div class="item-head">
+              <strong>{e.role}</strong>
+              <span class="muted">{e.company} • {e.start}–{e.end}</span>
+            </div>
+            <ul>
+              {e.bullets.map((b) => <li>{b}</li>)}
+            </ul>
+          </article>
+        ))}
+      </section>
+    </main>
+  </body>
+</html>

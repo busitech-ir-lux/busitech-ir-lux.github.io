@@ -1,0 +1,107 @@
+{
+  "skills": [
+    {
+      "name": "Routing",
+      "level": 85,
+      "tags": [
+        "cisco",
+        "mikrotik",
+        "linux"
+      ]
+    },
+    {
+      "name": "VMware",
+      "level": 80,
+      "tags": [
+        "esxi",
+        "vcenter",
+        "backups"
+      ]
+    },
+    {
+      "name": "Active Directory",
+      "level": 75,
+      "tags": [
+        "windows server",
+        "group policy",
+        "user management"
+      ]
+    },
+    {
+      "name": "Network Security",
+      "level": 70,
+      "tags": [
+        "firewalls",
+        "vpn",
+        "troubleshooting"
+      ]
+    },
+    {
+      "name": "Hardware Support",
+      "level": 90,
+      "tags": [
+        "diagnostics",
+        "repairs",
+        "end-user support"
+      ]
+    }
+  ],
+  "summary": "IT Support & Network Specialist with 5+ years of experience in IT operations, networking, and end-user support, including 4+ years in enterprise IT environments. Skilled in troubleshooting hardware, software, and connectivity issues, managing routers, switches, firewalls, and administering VMware environments (ESXi, vCenter, backups). Adept in Active Directory, with a strong focus on infrastructure reliability, customer support, and technical documentation.\n\n",
+  "experience": [
+    {
+      "company": "Tech Solutions Ltd",
+      "role": "Network Specialist",
+      "start": "2021-09",
+      "end": "Present",
+      "bullets": [
+        "Managed enterprise network infrastructure including routers, switches, and firewalls",
+        "Administered VMware environments (ESXi, vCenter) and implemented backup solutions",
+        "Provided IT support for 200+ users, troubleshooting hardware and software issues",
+        "Configured and maintained Active Directory for user authentication and permissions"
+      ]
+    },
+    {
+      "company": "IT Services Co",
+      "role": "IT Support Technician",
+      "start": "2019-06",
+      "end": "2021-08",
+      "bullets": [
+        "Delivered end-user technical support for desktops, laptops, and peripherals",
+        "Assisted in network setup and connectivity troubleshooting",
+        "Documented IT processes and maintained inventory of hardware assets",
+        "Participated in system migrations and software deployments"
+      ]
+    }
+  ],
+  "name": "Mahdi HAMIDI",
+  "social": [
+    {
+      "url": "https://www.linkedin.com/in/mahdi-hamidi-3a0307163",
+      "icon": "linkedin",
+      "label": "LinkedIn"
+    },
+    {
+      "label": "Whatsapp",
+      "url": "https://wa.me/352661199277",
+      "icon": "whatsapp"
+    }
+  ],
+  "location": "Belvaux, Luxembourg",
+  "title": "Network specialist",
+  "projects": [
+    {
+      "title": "Enterprise Network Redesign",
+      "description": "Led the redesign and implementation of a secure network infrastructure for a 500-employee company, improving performance by 40% and reducing downtime.",
+      "link": "#",
+      "tags": ["networking", "cisco", "security"]
+    },
+    {
+      "title": "VMware Migration Project",
+      "description": "Migrated legacy servers to a VMware ESXi environment, consolidating resources and enhancing backup capabilities.",
+      "link": "#",
+      "tags": ["vmware", "virtualization", "infrastructure"]
+    }
+  ],
+  "image": "",
+  "email": "info.busitech@proton.me"
+}
