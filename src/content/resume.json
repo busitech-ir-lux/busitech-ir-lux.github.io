@@ -93,15 +93,23 @@
       "title": "Enterprise Network Redesign",
       "description": "Led the redesign and implementation of a secure network infrastructure for a 500-employee company, improving performance by 40% and reducing downtime.",
       "link": "#",
-      "tags": ["networking", "cisco", "security"]
+      "tags": [
+        "networking",
+        "cisco",
+        "security"
+      ]
     },
     {
       "title": "VMware Migration Project",
       "description": "Migrated legacy servers to a VMware ESXi environment, consolidating resources and enhancing backup capabilities.",
       "link": "#",
-      "tags": ["vmware", "virtualization", "infrastructure"]
+      "tags": [
+        "vmware",
+        "virtualization",
+        "infrastructure"
+      ]
     }
   ],
-  "image": "",
+  "image": "/uploads/253254193.png",
   "email": "info.busitech@proton.me"
 }
