@@ -7,6 +7,7 @@ window.addEventListener("load", () => {
   });
 });
 
+
 window.addEventListener("load", () => {
   // existing animation
   document.querySelectorAll(".skill-fill").forEach((bar) => {

@@ -25,6 +25,7 @@
   --shadow: 0 12px 34px rgba(0, 0, 0, 0.35);
 }
 
+
 * {
   box-sizing: border-box;
 }
@@ -631,4 +632,17 @@ input:checked + .slider::before {
     /* height: 7px !important; */
     display: none !important;
   }
+}
+/* Hide skill search and tags globally */
+.skill-search,
+.skill-tags,
+.tag {
+  display: none !important;
+}
+
+.two-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; /* FIX: was too small */
+  align-items: start;
 }
