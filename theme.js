@@ -10,4 +10,3 @@ toggle.addEventListener("change", () => {
   root.setAttribute("data-theme", theme);
   localStorage.setItem("theme", theme);
 });
-
